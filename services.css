@@ -4,12 +4,17 @@
 
 body {
 	width: 100%;
-	height: 100vh;
 	padding: 0;
 	margin: 0;
 	font-family: sans-serif;
 	background: transparent;
 	overflow-x: hidden; 
+}
+
+#services {
+	width: 100%;
+	/* height: 100vh; */
+	overflow-x: hidden;
 }
 
  #services .server .vices{
@@ -28,17 +33,34 @@ body {
 	font-size: 2.5rem;
 }
 
+#services .gidder {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+}
+
 #services .gidder .fontes {
 	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5px;
+	flex-wrap: wrap;
+}
+
+#services .gidder .fontes .tok {
+	height: 300px;
+	flex-basis: 300px;
+	flex-grow: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+#services .fontes .tok img {
+	width: 100%;
 	height: 100%;
-	width: 90%;
-	margin: auto;
-	padding: 40px;
-	display: grid;
-	grid-template-columns: repeat(3, 1fr);
-	grid-auto-rows: minmax(100px auto);
-	grid-gap: 20px;
-	box-sizing: border-box;
+	object-fit: cover;
 }
 
 #services .gidder .fontes .tok:hover .overlay {
@@ -47,14 +69,13 @@ body {
 	width: 100%;
 	height: 100%;
 	bottom: 0;
-	padding-top: 15px;
+	padding-top: 45px;
 	color: #fff;
 	transition: all 0.2s ease-in;
 }
 
 #services .gidder .fontes .tok:hover .overlay i {
 position: relative;
-top: 10px;
 font-size: 2rem;
 color: #fff;
 display: block;
@@ -66,27 +87,7 @@ margin-left: 25px;
 	font-size: 1.4rem;
 	font-weight: 700;
 	margin-left: 25px;
-}
-
-
-#services .gidder .fontes .tok {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-
-}
-
-#services .tok {
-	background: #797979;
-	position: relative;
-}
-
-#services img { 
-	position: absolute;
-	height: 100%;
-	width: 100%;
-
+	/* color: #36b3a7; */
 }
 
 #services img {
@@ -107,11 +108,11 @@ margin-left: 25px;
 .confy {
 	text-decoration: none;
 	display: block;
-	width: 100px;
+	width: 130px;
 	margin: 0 auto;
 	background: black;
 	color: #fff;
-	padding: 10px 15px;
+	padding: 10px 0;
 	border-radius: 20px;
 	transition: 0.3s;
 	margin-top: 20px;
@@ -122,51 +123,3 @@ margin-left: 25px;
 	border: none;
 	border-radius: 20px;
 }
-
-@media(max-width: 600px) {
-
-	#services .gidder .fontes {
-	position: relative;
-	height: 100%;
-	width: 90%;
-	margin: auto;
-	padding: 10px;
-	display: grid;
-	grid-template-columns: repeat(2, 1fr);
-	grid-auto-rows: minmax(100px auto);
-	grid-gap: 20px;
-	box-sizing: border-box;
-}
-
-#portfolio .gidder .fontes .tok {
-	position: relative;
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
-
-}
-
-#portfolio .tok {
-	background: #797979;
-	position: relative;
-}
-
-#portfolio img { 
-	position: absolute;
-	height: 100%;
-	width: 100%;
-	top: 0;
-	left: 0;
-
-}
-
-#portfolio img {
-	background: linear-gradient(rgba (0, 0, 0 0.5), rgba(0, 0, 0, 0.5));
-}
-
-/*#portfolio .tok-1{
-	grid-column: 1/2;
-	grid-row: 1/4;
-	}
-}
-*/

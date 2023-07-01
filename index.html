@@ -3,41 +3,55 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie-edge">
-	<link rel="stylesheet" type="text/css" href="file:///C:/Users/user/Desktop/fontawesome-free-5.13.0-web/css/all.css">
-	<link rel="stylesheet" type="text/css" href="tammy-photography.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" 
+	integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="portfolio-gallery.css">
 	<link rel="stylesheet" type="text/css" href="mennu.css">
 	<link rel="stylesheet" type="text/css" href="contactuss.css">
-	<link rel="stylesheet" type="text/css" href="serveses.css">
+	<link rel="stylesheet" type="text/css" href="services.css">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="footers.css">
 	<title>Tammy-Photography</title>
 </head>
 <body>
-	<div class="menu-wrap">
-    <input type="checkbox" class="toggler">
-    <div class="hamburger"><div></div></div>
-    <div class="menu">
-      <div>
-        <div>
-          <ul>
-            <li><a href="#">Home</a></li>
-			<li><a href="#about">About Me</a></li>
-			<li><a href="#services">My Services</a></li>
-			<li><a href="#portfolio">My Gallery</a></li>
-			<li><a href="#contact">Contact Me</a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
 	<header>
-		<nav>
-			<a id="logo" href="#">logo</a>
-			<ul>
+		<nav id="navbar">
+			<div class="logo">
+				<i class="fas fa-camera-retro" aria-hidden="true"></i>
+			</div>
+
+
+			<ul class="navbar-links">
+				<div class="desktop-links">
 				<li><a href="#">Home</a></li>
 				<li><a href="#about">About Me</a></li>
 				<li><a href="#services">My Services</a></li>
 				<li><a href="#portfolio">My Gallery</a></li>
 				<li><a href="#contact">Contact Me</a></li>
+				</div>
+
+
+				   <!-- hamburger icon -->
+				<button id="menu-btn" class="hamburger">
+					<span class="hamburger-top"></span>
+					<span class="hamburger-middle"></span>
+					<span class="hamburger-bottom"></span>
+				</button>
 			</ul>
+
+
+			 <!-- mobile menu -->
+			 <ul class="mobile-menu" style="display: none;">
+				<div id="men">
+						<li><a class="home" href="#">Home</a></li>
+						<li><a class="what-i-do" href="#about">About Me</a></li>
+						<li><a class="my-work" href="#services">My Services</a></li>
+						<li><a class="portfolios" href="#portfolio">My Gallery</a></li>
+						<li><a class="contact-me" href="#contact">Contact Me</a></li>
+				</div>
+			</ul>
+
+			
 		</nav>
 
 		<div class="container">
@@ -47,9 +61,9 @@
 			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
 			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
 			consequat.</p>
-			<div class="bottun">
-				<a href="#" class="button">Buy It Now</a>
-			<a href="#" class="butt">Discover More</a>
+			<div class="button-box">
+				<a href="#" class="button-1">Buy It Now</a>
+			<a href="#" class="button-2">Discover More</a>
 			</div>
 		</div>
 	</header>
@@ -68,54 +82,61 @@
 			</div>
 			
 		</div>
+
+		<h5>PHOTOGRAPHER</h5>
+
+		<div class="about-tammy">
 		
-		<div class="annie">
+			<div class="about-text">
+				<h2>Tammy Ogiamien</h2>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
 
-			<h5>PHOTOGRAPHER</h5>
-			<h2>Tammy Ogiamien</h2>
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+				<p>
+					Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+					tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+					quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+					consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+					cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+					proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+				</p>
+			</div>
 
-			<p>
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-				tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-				quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-				consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-				cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-				proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-			</p>
+			<div class="about-image">
+				<img src="images/adult-blur.jpg" alt="" srcset="">
+			</div>
 		</div>
 
 
-		<h2 class="p-team">My Professional Team</h2>
+		<h2 class="team-heading">My Professional Team</h2>
 		<div class="linn"></div>
 		<div class="professional">
 				
 
-				<div class="image1">
-					<img src="young28.jpg">
+				<div class="imgs image1">
+					<img src="images/young28.jpg">
 					<p>John Doe</p>
 					<p>tour photographer</p>
 				</div>
-				<div class="image2">
-					<img src="portrait-23461.jpg">
+				<div class="imgs image2">
+					<img src="images/portrait-23461.jpg">
 					<p>Stephanie Williams</p>
 					<p>Outdoor Photographer</p>
 				</div>
-				<div class="image3">
-					<img src="close-up2.3.jpg">
+				<div class="imgs image3">
+					<img src="images/close-up2.3.jpg">
 					<p>Jessica Douglas</p>
 					<p>Wedding Photographer</p>
 				</div>
@@ -126,74 +147,75 @@
 	<section id="services">
 		
 		<div class="server">
-		<div class="vices">
-			<h2>Services</h2>
-			<p>what we do</p>
+			<div class="vices">
+				<h2>Services</h2>
+				<p>what we do</p>
 
-		</div>
+			</div>
 
-		<div class="gidder">
-			<div class="fontes">
+			<div class="gidder">
+				<div class="fontes">
 
-				<div class="tok tok-1">
-				<img src="groom2345.jpg">
-				<div class="overlay">
-					<i class="fas fa-camera-retro" aria-hidden="true"></i>
-					<h5>Wedding <br> Photography</h5>
-				</div>
+					<div class="tok tok-1">
+						<img src="images/groom2345.jpg">
+						<div class="overlay">
+							<i class="fas fa-camera-retro" aria-hidden="true"></i>
+							<h5>Wedding <br> Photography</h5>
+						</div>
+						
+					</div>     
+
+					<div class="tok tok-2">
+						<img src="images/young29.jpg">
+						<div class="overlay">
+							<i class="fas fa-camera-retro" aria-hidden="true"></i>
+							<h5>Portrait <br> Photography</h5>
+						</div>
+
+					</div>   
+
+					<div class="tok tok-3">
+						<img src="images/man-travel.jpg">
+						<div class="overlay">
+							<i class="fas fa-camera-retro" aria-hidden="true"></i>
+							<h5>Travel <br> Photography</h5>
+						</div>
+					</div>   
+
+					<div class="tok tok-4">
+						<img src="images/productf23.jpg">
+						<div class="overlay">
+							<i class="fas fa-camera-retro" aria-hidden="true"></i>
+							<h5>Product <br> photography</h5>
+						</div>
+
+					</div>   
+
+					<div class="tok tok-5">
+						<img src="images/kisses23.jpg">
+						<div class="overlay">
+							<i class="fas fa-camera-retro" aria-hidden="true"></i>
+							<h5>Fashion <br> Photography</h5>
+						</div> 
+					</div>  
+
+					<div class="tok tok-6">
+						<img src="images/sportify234.jpg">
+						<div class="overlay">
+							<i class="fas fa-camera-retro" aria-hidden="true"></i>
+							<h5>Sport <br> Photography</h5>
+						</div>   
+					</div>
 				
-			</div>     
-
-			<div class="tok tok-2">
-				<img src="young29.jpg">
-				<div class="overlay">
-					<i class="fas fa-camera-retro" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>
 				</div>
-
-			</div>   
-
-			<div class="tok tok-3">
-				<img src="greyscale2.jpg">
-				<div class="overlay">
-					<i class="fas fa-camera-retro" aria-hidden="true"></i>
-					<h5>Travel <br> Photography</h5>
-				</div>
-			</div>   
-
-			<div class="tok tok-4">
-				<img src="productf23.jpg">
-				<div class="overlay">
-					<i class="fas fa-camera-retro" aria-hidden="true"></i>
-					<h5>Product <br> photography</h5>
-				</div>
-
-			</div>   
-
-			<div class="tok tok-5">
-				<img src="kisses23.jpg">
-				<div class="overlay">
-					<i class="fas fa-camera-retro" aria-hidden="true"></i>
-					<h5>Fashion <br> Photography</h5>
-				</div> 
-			</div>  
-
-			<div class="tok tok-6">
-				<img src="sportify234.jpg">
-				<div class="overlay">
-					<i class="fas fa-camera-retro" aria-hidden="true"></i>
-					<h5>Sport <br> Photography</h5>
-				</div>   
-		</div>
-				
 			</div>
 			
 
-		<div class="interest">
-			<p>Interested In Working With Me</p>
-			<a class="confy" href="">Contact Me</a>
+			<div class="interest">
+				<p>Interested In Working With Me</p>
+				<a class="confy" href="">Contact Me</a>
+			</div>
 		</div>
-	</div>
 	</section>
 
 	<section id="portfolio">
@@ -201,7 +223,7 @@
 		<div class="portfolio-showcase">
 			<div class="portfolio-content">
 				<h2>The Coolest Photo Project I've Ever Created.</h2>
-					<div class="out">
+					<div class="outdoor-button">
 						<a href="#" class="outdoor">outdoor</a>
 					</div>
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
@@ -218,72 +240,79 @@
 	<div class="main">
 		<h2>My Gallery</h2>
 		<p>Here Are My Works Below.</p>
-		<div class="gallery">
 
-			<div class="img img-1">
-				<img src="grey-scale.jpg">
-				<div class="overlap">
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Out-Door <br> Photography</h5>	 -->									
+		<div class="container-gallery">
+
+			<div class="gallery">
+
+				<div class="img img-1">
+					<img src="images/grey-scale.jpg">
+					<div class="overlap">
+					<i class="fa fa-camera" aria-hidden="true"></i>
+						<h5>An Experience <br> Of A Lifetime</h5>										
+					</div>
+				</div>                 
+	
+				<div class="img img-2">
+					<img src="images/women234.jpg">
+					<div class="overlap">
+					<i class="fa fa-camera" aria-hidden="true"></i>
+					<h5>An Experience <br> Of A Lifetime</h5>										
+					</div>
 				</div>
-			</div>                 
-
-			<div class="img img-2">
-				<img src="women234.jpg">
-				<div class="overlap">
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>	 -->									
+	
+				<div class="img img-3">
+					<img src="images/man-photo.jpg">
+					<div class="overlap">
+					<i class="fa fa-camera" aria-hidden="true"></i>
+						<h5>An Experience <br> Of A Lifetime</h5>										
+					</div>
+				</div>
+	
+				<div class="img img-4">
+					<img src="images/selective.jpg">
+					<div class="overlap">	
+					<i class="fa fa-camera" aria-hidden="true"></i>
+					<h5>An Experience <br> Of A Lifetime</h5>									
+					</div>
+				</div>
+	
+				<div class="img img-5">
+					<img src="images/adult-blur.jpg">
+					<div class="overlap">		
+					<i class="fa fa-camera" aria-hidden="true"></i>
+						<h5>An Experience <br> Of A Lifetime</h5>								
+					</div>
+				</div>
+	
+				<div class="img img-6">
+					<img src="images/photoback.jpg">
+					<div class="overlap">		
+					<i class="fa fa-camera" aria-hidden="true"></i>
+						<h5>An Experience <br> Of A Lifetime</h5>								
+					</div>
+				</div>
+	
+				<div class="img img-7">
+					<img src="images/camera23.jpg">
+					<div class="overlap">	
+					<i class="fa fa-camera" aria-hidden="true"></i>
+						<h5>An Experience <br> Of A Lifetime</h5>									
+					</div>
+				</div>
+	
+				<div class="img img-8">
+					<img src="images/greyscale2.jpg">
+					<div class="overlap">	
+					<i class="fa fa-camera" aria-hidden="true"></i>
+					<h5>An Experience <br> Of A Lifetime</h5>								
+					</div>
 				</div>
 			</div>
 
-			<div class="img img-3">
-				<img src="man-photo.jpg">
-				<div class="overlap">
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>	 -->									
-				</div>
-			</div>
-
-			<div class="img img-4">
-				<img src="selective.jpg">
-				<div class="overlap">	
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Out-Door <br> Photography</h5>	 -->								
-				</div>
-			</div>
-
-			<div class="img img-5">
-				<img src="adult-blur.jpg">
-				<div class="overlap">		
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>	 -->							
-				</div>
-			</div>
-
-			<div class="img img-6">
-				<img src="photoback.jpg">
-				<div class="overlap">		
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>		 -->						
-				</div>
-			</div>
-
-			<div class="img img-7">
-				<img src="camera23.jpg">
-				<div class="overlap">	
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>		 -->							
-				</div>
-			</div>
-
-			<div class="img img-8">
-				<img src="greyscale2.jpg">
-				<div class="overlap">	
-				<!-- <i class="fa fa-camera" aria-hidden="true"></i>
-					<h5>Portrait <br> Photography</h5>			 -->						
-				</div>
-			</div>
 		</div>
+		
+
 		<div class="diva">
 			<a class="read" href="">show more</a>
 		</div>
@@ -339,60 +368,56 @@
 				<p>interested to work with us?</p>
 		
 
-			<form class="contact-form" action="land.html" method="post">
-				<input type="text" class="context-form-text" placeholder="Your Name">
-				<input type="text" class="context-form-text" placeholder="Your Email">
-				<span>
-					<textarea placeholder="Your Message"></textarea>
-				</span>
-				<input type="submit" class="context-form-btn" value="Submit">
-			</form>
-		</div>
-	</div>		
+				<form class="contact-form" action="land.html" method="post">
+					<input type="text" class="context-form-text" placeholder="Your Name">
+					<input type="text" class="context-form-text" placeholder="Your Email">
+					<span>
+						<textarea placeholder="Your Message"></textarea>
+					</span>
+					<button type="submit" class="context-form-btn">submit</button>
+				</form>
+			</div>
+		</div>		
 </section>
 
 	<footer>
-		<div class="tamz">
-			<h3>things we are tasked with</h3>
-			<p>
-					<li>wedding shoots</li>
-					<li>product photography</li>
-					<li>outdoor shots</li>
-					<li>tour photography</li>
-			</p>
-		</div>
+		<div class="footer-box">
 
-		<div class="contt">
-			<h3>You Can View Our Shoots On The Platforms Below</h3>
-			<p>
-				<ul>
-					<li><i class="fab fa-facebook"></i> Facebook</li>
-					<li><i class="fab fa-instagram"></i> Instagram</li>
-					<li><i class="fab fa-pinterest"></i> Pinterest</li>
-					<li><i class="fab fa-twitter"></i> Twitter</li>
-				</ul>
-			</p>
-		</div>
+			<div class="group footer-tasks">
+				<h3>Things we are tasked with</h3>
+				<p>
+						<li>Wedding Shoots</li>
+						<li>Product Photography</li>
+						<li>Outdoor Shots</li>
+						<li>Tour Photography</li>
+				</p>
+			</div>
+	
+			<div class="group footer-icons">
+				<h3>Reach us through our social handles</h3>
+					<ul>
+						<li><i class="fab fa-facebook"></i> Facebook</li>
+						<li><i class="fab fa-instagram"></i> Instagram</li>
+						<li><i class="fab fa-pinterest"></i> Pinterest</li>
+						<li><i class="fab fa-twitter"></i> Twitter</li>
+						<li><i class="fas fa-envelope"></i> photo@tammy.com</li>						
+					</ul>
+			</div>
+			</div>
 
-		<div class="right">
-			<h3>You Can Contact Us Through The The Following</h3>
-			<p>
-				<ul>
-
-						<li><i class="fas fa-phone-alt"></i> Phone: +1 650-444-0000</li>
-						<li><i class="fas fa-envelope"></i> Email: photo@tammy.com</li>						
-						<li><i class="fab fa-whatsapp"></i> Whatsapp: +1 653-447-0000</li>
-				</ul>
-			</p>
 		</div>
+		
 		<div class="glory">
-			<h3>Tammy Photography</h3>
-		<h5>Photographer</h5>
-<p>Tamz photos,<br> Copyright &copy; 2020</p>
-
+			<p>Tamz photos Copyright &copy; 2020</p>
 		</div>
 		
 </footer>
 
+ <!-- jquery cdn -->
+ <script src="https://code.jquery.com/jquery-3.6.0.min.js" 
+ integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" 
+ crossorigin="anonymous"></script>
+
+<script src="script.js"></script>
 </body>
 </html>

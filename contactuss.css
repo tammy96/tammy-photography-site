@@ -3,19 +3,17 @@
 }
 
 #contact {
-	/*height: 90vh;*/
-	padding: 40px auto;
-	margin-bottom: 10px;
+	padding: 40px 10px;
+	margin:70px auto;
 	font-family: sans-serif;
 	overflow-x: hidden;
 
 }
 
 #contact .contact-all{
-	/*border: 2px solid black;*/
 	display: flex;
-	justify-content: space-around;
-	margin-left: 10px;
+	justify-content: center;
+	flex-wrap: wrap;
 	width: 100%;
 	overflow-x: hidden;
 }
@@ -59,39 +57,50 @@
 	height: 3px;
 	background-color: var(--brandcolor);
 	margin: 20px auto; 
+	border: 2px solid red;
 
 }
 
 .info {
-	width: 40%;
-	padding: 15px;
+	flex-basis: 400px;
 	text-align: left;
 }
 
+.info p {
+	padding: 10px 0;
+}
+
+
+
+
+.info form {
+	max-width: 500px;
+	border: none;
+	outline: none;
+}
+
+.info form input {
+	width: 100%;
+	padding: 10px 0;
+	margin: 10px 0;
+	border: none;
+	outline: none;
+	background: rgba(0, 0, 0, 0.2);
+}
 
 textarea {
 	display: block;
-	width: 87%;
+	width: 100%;
 	height: 130px;
-	margin-top: 5%;
+	margin-top: 10px;
 	border: none;
 	background: rgba(0, 0, 0, 0.2);
 	outline: none;
-	padding-left: 10px;
-}
-
-.info .context-form-text {
-	width: 40%;
-	height: 35px;
-	margin-right: 25px;
-	border: none;
-	background: rgba(0, 0, 0, 0.2);
-	outline: none;
-	padding-left: 10px;
 }
 
 .info .context-form-btn {
 	border: none;
+	width: 100px;
 	margin-top: 15px;
 	padding: 10px 30px;
 	background: black;
@@ -107,44 +116,31 @@ textarea {
 }
 
 
-@media(max-width: 600px) {
-	#contact {
-		width: 100%;
-		/*height: 100vh;*/
-
+@media(max-width: 900px) {
+	#contact{
+		overflow-x: hidden;
 	}
-	#contact .contact-all {
-		display: block;
-		height: minmax(100px auto);
+	#contact h2 {
+		text-align: center;
+	}
+	#contact p {
 		text-align: center;
 	}
 
-	#contact .info {
-		width: 80%;
-		display: block;
+	.info .context-form-btn {
 		text-align: center;
+		display: flex;
+		align-items: center;
 		margin: 0 auto;
-	}
-
-	#contact .info .context-form-text {
-	width: 100%;
-	height: 35px;
-	margin-bottom: 25px;
-	border: none;
-	background: rgba(0, 0, 0, 0.2);
-	outline: none;
-	padding-left: 10px;
-	}
-
-	#contact .info textarea {
-	display: block;
-	width: 100%;
-	height: 130px;
-	margin-top: 5%;
-	border: none;
-	background: rgba(0, 0, 0, 0.2);
-	outline: none;
-	padding-left: 10px;
+		border: none;
+		width: 100px;
+		margin-top: 15px;
+		padding: 10px 30px;
+		background: black;
+		color: #fff;
+		border-radius: 20px;
+		transition: 0.3s linear;
+	
 	}
 
 }

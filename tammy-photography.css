@@ -104,7 +104,7 @@ ul a:hover {
 	letter-spacing: 0.2rem;
 }
 
-.button {
+.button-1 {
 	text-decoration: none;
 	list-style: none;
 	color: #fff;
@@ -113,13 +113,13 @@ ul a:hover {
 	transition: 0.2s linear;
 }
 
-.button:hover {
+.button-1:hover {
 	background: #d28d27;
 	border-radius: 3px;
 }
 
 
-.butt {
+.button-2 {
 	text-decoration: none;
 	list-style: none;
 	color: #fff;
@@ -131,7 +131,7 @@ ul a:hover {
 
 }
 
-.butt:hover {
+.button-2:hover {
 	background: #d28d27;
 	border-radius: 3px;
 	border: none;
@@ -315,8 +315,6 @@ ul a:hover {
 #portfolio .portfolio-content {
 	max-width: 900px;
 	padding: 15px;
-	/*margin-top: 30px;*/
-	/*border: 2px solid #fff;*/
 }
 
 #portfolio .portfolio-content h2 {
@@ -351,7 +349,7 @@ ul a:hover {
 	position: relative;
 	height: minmax(100px auto);
 	width: 100%;
-	box-size: border-box;
+	box-sizing: border-box;
 }
 
 #portfolio .main h2 {
@@ -681,10 +679,6 @@ nav {
 
 	nav ul {
 		display: none;
-	}
-
-	#logo {
-
 	}
 
 	.container {
