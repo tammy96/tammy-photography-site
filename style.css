@@ -96,7 +96,6 @@ header .container {
     flex-direction: column;
     justify-content: center;
 	align-items: center;
-	border: 2px solid red;
     margin: 100px 10px;
     max-width: 768px;
 	color: #fff;
