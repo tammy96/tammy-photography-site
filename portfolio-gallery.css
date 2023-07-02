@@ -167,7 +167,6 @@ margin-left: 25px;
 }
 
 #portfolio .lune {
-	/* height: 2px; */
 	width: 80px;
 	background-color: var(--brandcolor);
 	display: block;
@@ -309,7 +308,6 @@ margin-left: 25px;
 
     #portfolio .main .container-gallery .gallery {
         width: 100%;
-        border: 2px solid black;
         display: flex;
         justify-content: center;
         flex-wrap: wrap;

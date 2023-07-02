@@ -32,13 +32,13 @@ body{
 
 nav {
 	display: flex;
+	background-attachment: fixed;
 	text-decoration: none;
 	border-color: red;
 	flex-wrap: wrap;
 	justify-content:space-between;
 	padding: 10px;
-	/* background-color: transparent; */
-	background-color: black;
+	background-color: #110c0f;
 	
 }
 
@@ -66,10 +66,8 @@ nav .desktop-links li {
 }
 
 .desktop-links a:hover {
-    background: var(--brandcolor);
-    /*background: transparent;*/
+	border-bottom: 2px solid var(--brandcolor);
     padding-bottom: 10px;
-    border-radius: 3px;
 
 }
 
@@ -83,20 +81,22 @@ nav .desktop-links li {
 
 header{
     height: 700px;
-	/* width: 100%; */
+	position: relative;
+	width: 100%;
 	background:linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(images/adultback.jpg);
 	background-size: cover; 
 	background-position: center;
 	background-repeat: no-repeat;
 	display: block;
 	background-attachment: fixed;
-	position: relative;
 }
 
-.container {
+header .container {
     display: flex;
     flex-direction: column;
     justify-content: center;
+	align-items: center;
+	border: 2px solid red;
     margin: 100px 10px;
     max-width: 768px;
 	color: #fff;
