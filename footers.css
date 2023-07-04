@@ -3,11 +3,26 @@
         font-family: sans-serif;
         font-weight: 300;
         width: 100%;
+        margin: 0 auto;
          padding: 20px;
          color: #fff;
          background-color: black;
          overflow-x: hidden;
      }
+
+     footer .footer-logos{
+      display: flex;
+      justify-content: flex-start;
+      gap: 10px;
+      padding: 10px 5px;
+     }
+
+     footer .footer-logos a{
+      text-decoration: none;
+      color: #aaa6a6;
+      font-size: 20px;
+     }
+
     
      footer .footer-box{
         width: 100%;
@@ -44,6 +59,19 @@
         background-color: black;
         overflow-x: hidden;
      }
+
+     footer .footer-logos{
+      display: flex;
+      justify-content: flex-start;
+      gap: 5px;
+      padding:10px 0;
+     }
+
+     footer .footer-logos a{
+      text-decoration: none;
+      color: #aaa6a6;
+      font-size: 17px;
+     }
     
      footer .footer-box{
         width: 100%;
@@ -63,8 +91,9 @@
      }
     
      footer h3{
-        margin: 20px 0;
-        font-size: 13px;
+        margin-top: 5px;
+        margin-bottom: 20px;
+        font-size: 12px;
      }
     
      footer .glory p{

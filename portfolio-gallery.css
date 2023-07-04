@@ -89,7 +89,6 @@
 
 #portfolio .main .gallery .img:hover .overlap i {
 position: relative;
-/*top: 10px;*/
 font-size: 2rem;
 color: #fff;
 display: block;
@@ -109,7 +108,7 @@ margin-left: 25px;
 	display: block;
 	margin: 20px auto;
 	padding: 10px;
-	max-width: 100px;
+	max-width: 200px;
 	text-decoration: none;
 	color: black;
 	font-weight: 500;
