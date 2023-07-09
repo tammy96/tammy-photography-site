@@ -2,6 +2,8 @@
 	--brandcolor: #36b3a7;
 }
 
+@media(min-width: 768px) {
+
 body {
 	width: 100%;
 	padding: 0;
@@ -13,7 +15,6 @@ body {
 
 #services {
 	width: 100%;
-	/* height: 100vh; */
 	overflow-x: hidden;
 }
 
@@ -37,6 +38,7 @@ body {
 	position: relative;
 	max-width: 1000px;
 	margin: 0 auto;
+	padding: 5px;
 }
 
 #services .gidder .fontes {
@@ -87,7 +89,6 @@ margin-left: 25px;
 	font-size: 1.4rem;
 	font-weight: 700;
 	margin-left: 25px;
-	/* color: #36b3a7; */
 }
 
 #services img {
@@ -122,4 +123,200 @@ margin-left: 25px;
 	background: rgba(100, 100, 100, 0.9);
 	border: none;
 	border-radius: 20px;
+}
+
+}
+
+@media(max-width: 768px){
+	body {
+		width: 100%;
+		padding: 0;
+		margin: 0;
+		font-family: sans-serif;
+		background: transparent;
+		overflow-x: hidden; 
+	}
+	
+	#services {
+		width: 100%;
+		overflow-x: hidden;
+	}
+	
+	 #services .server .vices{
+		text-align: center;
+		padding: 20px;
+	
+	}
+	
+	#services .server .vices p {
+		color: var(--brandcolor);
+		letter-spacing: 0.2rem;
+		font-size: 1rem;
+	}
+	
+	#services .server .vices h2 {
+		font-size: 2.5rem;
+	}
+	
+	.interest {
+		text-align: center;
+		padding: 50px;
+		margin: auto 50px;
+	}
+	
+	.interest p {
+		color: black;
+		font-size: 1.2rem;
+	}
+	
+	.confy {
+		text-decoration: none;
+		display: block;
+		width: 130px;
+		margin: 0 auto;
+		background: black;
+		color: #fff;
+		padding: 10px 0;
+		border-radius: 20px;
+		transition: 0.3s;
+		margin-top: 20px;
+	}
+	
+	.confy:hover {
+		background: rgba(100, 100, 100, 0.9);
+		border: none;
+		border-radius: 20px;
+	}
+}
+
+
+@media (min-width: 550px) and (max-width: 768px){
+#services .gidder {
+	position: relative;
+	max-width: 1000px;
+	margin: 0 auto;
+	padding: 5px;
+}
+
+#services .gidder .fontes {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 10px;
+	padding: 5px;
+	flex-wrap: wrap;
+}
+
+#services .gidder .fontes .tok {
+	height: 200px;
+	flex-basis: 20%;
+	flex-grow: 1;
+	position: relative;
+	overflow: hidden;
+}
+
+#services .fontes .tok img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+#services .gidder .fontes .tok:hover .overlay {
+	background: rgba(0, 0, 0, 0.8);
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	bottom: 0;
+	padding-top: 18px;
+	color: #fff;
+	transition: all 0.2s ease-in;
+}
+
+#services .gidder .fontes .tok:hover .overlay i {
+position: relative;
+font-size: 0.8rem;
+color: #fff;
+display: block;
+margin-top: 30px;
+margin-left: 12px;
+margin-bottom: 5px;
+}
+
+#services .gidder .fontes .tok:hover .overlay h5 {
+	font-size: 1rem;
+	font-weight: 700;
+	margin-left: 12px;
+}
+
+#services img {
+	background: linear-gradient(rgba (0, 0, 0 0.5), rgba(0, 0, 0, 0.5));
+}
+
+
+}
+
+@media(max-width: 550px) {
+	#services .gidder {
+		position: relative;
+		max-width: 1000px;
+		margin: 0 auto;
+		padding: 5px;
+	}
+	
+	#services .gidder .fontes {
+		position: relative;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 10px;
+		padding: 5px;
+		flex-wrap: wrap;
+	}
+	
+	#services .gidder .fontes .tok {
+		height: 100px;
+		flex-basis: 20%;
+		flex-grow: 1;
+		position: relative;
+		overflow: hidden;
+	}
+	
+	#services .fontes .tok img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
+	
+	#services .gidder .fontes .tok:hover .overlay {
+		background: rgba(0, 0, 0, 0.8);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		bottom: 0;
+		padding-top: 18px;
+		color: #fff;
+		transition: all 0.2s ease-in;
+	}
+	
+	#services .gidder .fontes .tok:hover .overlay i {
+	position: relative;
+	font-size: 0.8rem;
+	color: #fff;
+	display: block;
+	margin-top: 20px;
+	margin-left: 12px;
+	margin-bottom: 5px;
+	}
+	
+	#services .gidder .fontes .tok:hover .overlay h5 {
+		font-size: 0.5rem;
+		font-weight: 700;
+		margin-left: 12px;
+	}
+	
+	#services img {
+		background: linear-gradient(rgba (0, 0, 0 0.5), rgba(0, 0, 0, 0.5));
+	}
+	
 }
