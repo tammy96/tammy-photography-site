@@ -9,9 +9,60 @@
 }
 
 body{
-    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
 	font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
+}
+
+@media(min-width: 1200px){
+	/* about image */
+
+#about .about-tammy{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px 10px;
+	gap: 10px;
+
+}
+
+.about-tammy .about-text {
+	max-width: 700px;
+}
+
+.about-tammy .about-text h2 {
+	color: #333;
+	font-size: 4rem ;
+}
+
+.about-tammy .about-text p {
+	line-height: 2rem;
+	font-weight: 400;
+	color: #696969;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about-tammy .about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 400px;
+	gap: 10px;
+}
+
+.about-tammy .about-image .photo-imgs {
+	width: 100px;
+	height: 100px;
+	background: #696969;
+	flex-grow: 1;
+	
+}
+.about-tammy .about-image .photo-imgs img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 }
 
 @media(min-width: 768px){
@@ -76,6 +127,119 @@ nav .desktop-links li {
 	display: none;
 }
 
+}
+
+@media(min-width: 768px) and (max-width: 1200px){
+	/* about image */
+
+#about .about-tammy{
+	max-width: 100%;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 50px 10px;
+	gap: 10px;
+
+}
+
+.about-tammy .about-text {
+	/* max-width: 700px; */
+	max-width: 50%;
+	/* text-align: center; */
+	margin: 0 auto;
+}
+
+.about-tammy .about-text h2 {
+	color: #333;
+	font-size: 3rem;
+	margin: 0 auto;
+}
+
+.about-tammy .about-text p {
+	line-height: 2rem;
+	font-weight: 400;
+	color: #696969;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about-tammy .about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	flex-wrap: wrap;
+	max-width: 400px;
+	margin: 10px;
+	gap: 10px;
+}
+
+.about-tammy .about-image .photo-imgs {
+	width: 100px;
+	height: 100px;
+	background: #696969;
+	flex-grow: 1;
+	
+}
+.about-tammy .about-image .photo-imgs img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+}
+
+@media(max-width: 768px){
+
+#about .about-tammy{
+	max-width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	/* text-align: center; */
+	flex-wrap: wrap;
+	margin: 50px 10px;
+	gap: 10px;
+
+}
+
+.about-tammy .about-text {
+	max-width: 400px;
+}
+
+.about-tammy .about-text h2 {
+	color: #333;
+	font-size: 3rem;
+	/* text-align: start; */
+}
+
+.about-tammy .about-text p {
+	line-height: 1.3rem;
+	font-weight: 400;
+	color: #696969;
+	font-family: 'Montserrat', sans-serif;
+}
+
+.about-tammy .about-image {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	max-width: 400px;
+	gap: 10px;
+}
+
+.about-tammy .about-image .photo-imgs {
+	width: 100px;
+	height: 100px;
+	background: #696969;
+	flex-grow: 1;
+	
+}
+.about-tammy .about-image .photo-imgs img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 }
 
 /* header section */
@@ -218,56 +382,6 @@ header .container {
 	margin: 20px auto;
 	text-align: center;
 }
-
-#about .about-tammy{
-	max-width: 100%;
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-	margin: 50px 10px;
-	gap: 10px;
-
-}
-
-.about-tammy .about-text {
-	max-width: 700px;
-}
-
-.about-tammy .about-text h2 {
-	color: #333;
-	font-size: 5rem ;
-}
-
-.about-tammy .about-text p {
-	line-height: 2rem;
-	font-weight: 400;
-	color: #696969;
-	font-family: 'Montserrat', sans-serif;
-}
-
-.about-tammy .about-image {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-wrap: wrap;
-	max-width: 400px;
-	gap: 10px;
-}
-
-.about-tammy .about-image .imgs {
-	width: 100px;
-	height: 100px;
-	background: #696969;
-	flex-grow: 1;
-	
-}
-.about-tammy .about-image img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-
 
 #about .team-heading{
 	font-size: 2.3rem;
